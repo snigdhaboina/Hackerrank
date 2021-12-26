@@ -1,20 +1,16 @@
-input: 
-Hello world
-I am a file
-Read me until end-of-file.
+/*input:
+        Hello world
+        I am a file
+        Read me until end-of-file.
 
-output:
-1 Hello world
-2 I am a file
-3 Read me until end-of-file.
+        output:
+        1 Hello world
+        2 I am a file
+        3 Read me until end-of-file.*/
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
-public class Solution {
+public class ScannerEndOfFile {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -25,8 +21,7 @@ public class Solution {
                 String str= s.nextLine();
                 System.out.println(i+" "+str);
             }
-            
+
         }
     }
 }
-

@@ -7,9 +7,9 @@ class UsernameValidator {
 }
 
 
-public class Solution {
+public class UsernameValidation {
     private static final Scanner scan = new Scanner(System.in);
-    
+
     public static void main(String[] args) {
         int n = Integer.parseInt(scan.nextLine());
         while (n-- != 0) {
@@ -19,7 +19,7 @@ public class Solution {
                 System.out.println("Valid");
             } else {
                 System.out.println("Invalid");
-            }           
+            }
         }
     }
 }

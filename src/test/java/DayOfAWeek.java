@@ -1,32 +1,23 @@
-Input Format
+/*Input Format
 
-A single line of input containing the space separated month, day and year, respectively, in    format.
+        A single line of input containing the space separated month, day and year, respectively, in    format.
 
-Constraints
+        Constraints
 
-Output Format
+        Output Format
 
-Output the correct day in capital letters.
+        Output the correct day in capital letters.
 
-Sample Input
+        Sample Input
 
-08 05 2015
-Sample Output
+        08 05 2015
+        Sample Output
 
-WEDNESDAY
-============================
+        WEDNESDAY
+        ============================*/
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
+import java.util.Calendar;
 
 class Result {
 
@@ -44,16 +35,13 @@ class Result {
         Calendar cal = Calendar.getInstance();
         cal.set(year, month, day);
         String[] strDays = new String[] { "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THRUSDAY", "FRIDAY", "SATURDAY" };
-      
-       return strDays[cal.get(Calendar.DAY_OF_WEEK)-1];
+
+        return strDays[cal.get(Calendar.DAY_OF_WEEK)-1];
     }
-
-    
-
 }
 
-public class Solution {
-   public static void main(String[] args) throws IOException {
+public class DayOfAWeek {
+    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
